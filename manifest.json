@@ -1,0 +1,30 @@
+{
+    "app": "io.anyviz.cloudadapter",
+    "version": "##VERSION##",
+    "revision": "##FLECS_VERSION##",
+    "title": "AnyViz Universal Cloud Adapter",
+    "author": "Mirasoft GmbH & Co. KG",
+    "image": "flecs.azurecr.io/io.anyviz.cloudadapter",
+    "description": "Cloud Adapter for connecting OPC-UA, Modbus, Siemens, Beckhoff, EtherNet/IP,\nBACnet and M-Bus devices to AnyViz Cloud. Including VPN and website routing.",
+    "avatar": "https://www.anyviz.io/wp-content/uploads/2021/06/AnyViz-Logo-Compact.svg",
+    "category": "logging",
+    "multiInstance": false,
+    "editor": ":8888",
+    "args": [],
+    "capabilities": [
+        "NET_ADMIN"
+    ],
+    "conffiles": [],
+    "devices": [
+        "/dev/net/tun"
+    ],
+    "env": [],
+    "interactive": false,
+    "ports": [
+        "8888:8888"
+    ],
+    "startupOptions": [],
+    "volumes": [
+        "anyviz_config:/etc/anyviz"
+    ]
+}
