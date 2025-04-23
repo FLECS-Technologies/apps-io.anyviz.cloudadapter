@@ -17,7 +17,8 @@
     "env": [],
     "interactive": false,
     "ports": [
-        "8888:8888"
+        "8888:8888",
+        "9999:9999"
     ],
     "startupOptions": [],
     "volumes": [
