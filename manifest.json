@@ -1,26 +1,24 @@
 {
-    "_schemaVersion": "2.0.0",
+    "$schema": "https://raw.githubusercontent.com/FLECS-Technologies/app-manifest/refs/heads/3.1.0/manifest.schema.json",
+    "_schemaVersion": "3.1.0",
     "app": "io.anyviz.cloudadapter",
     "version": "##VERSION##",
     "revision": "##FLECS_VERSION##",
     "image": "flecs.azurecr.io/io.anyviz.cloudadapter",
     "multiInstance": false,
-    "editor": ":8888",
-    "args": [],
+    "editors": [
+        {
+            "name": "UI",
+            "port": 8888,
+            "supportsReverseProxy": true
+        }
+    ],
     "capabilities": [
         "NET_ADMIN"
     ],
-    "conffiles": [],
     "devices": [
         "/dev/net/tun"
     ],
-    "env": [],
-    "interactive": false,
-    "ports": [
-        "8888:8888",
-        "9999:9999"
-    ],
-    "startupOptions": [],
     "volumes": [
         "anyviz_config:/etc/anyviz"
     ]
